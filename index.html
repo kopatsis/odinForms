@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple_Form_Elements</title>
+</head>
+<body>
+    <div class="left">
+        <img src="eugene-golovesov-HRP_hTutMB0-unsplash.jpg">
+        <a href="https://www.kopatsis.com">
+        <div class="author">kopatsis.com</div>
+        </a>
+    </div>
+    <div class="whole-form">
+        <div class="bigger intitle">World's Best Form</div>
+        <div class = "pre intitle">Each paragraph has two WH-questions for your students to answer. This deck has 45 short stories, each 3-4 sentences in length, to address listening comprehension skills. Each paragraph has two WH-questions for your students to answer.</div>
+        <form method="POST" action="/page">
+            <div class = "big title fline">Form To Fill</div>
+            <div class = "names fline">
+                <div class="lside">
+                    <label for="fname">First Name*</label>
+                    <input class="shaded" required id="fname" type="text" name="first-name" />
+                </div>
+                <div class="rside">
+                    <label for="lname">Last Name*</label>
+                    <input class="shaded" required id="lname" type="text" name="last-name" />
+                </div>
+            </div>
+            <div class = "emailpass fline">
+                <div class="lside">
+                    <label for="email">Email</label>
+                    <input class="shaded" id="email" type="email" name="email" />
+                </div>
+                <div class="rside">
+                    <label for="password">Password</label>
+                    <input class="shaded" id="password" type="password" name="password" />
+                </div>
+            </div>
+            <div class = "complaint fline">
+                <div class="lside">
+                    <label for="complaints">Compaints</label>
+                    <textarea class="shaded" id="compaints" name="complaints"></textarea>
+                </div>
+            </div>
+            <div class = "genderace fline">
+                <div class="lside">
+                    <label for="gender">Gender</label>
+                    <select class="shaded hh">
+                        <option class="trouble" value="">Please Select an Option</option>
+                        <option class="trouble" value="male">Male</option>
+                        <option class="trouble" value="female">Female</option>
+                        <option class="trouble" value="nonbinary">Nonbinary</option>
+                        <option class="trouble" value="other">Other Gender</option>
+                    </select>
+                </div>
+                <div class="rside">
+                    <label for="race">Race</label>
+                    <select class="shaded hh">
+                        <option class="trouble" value="">Please Select an Option</option>
+                        <option class="trouble" value="asianpi">Asian/Pacific Islander</option>
+                        <option class="trouble" value="black">Black</option>
+                        <option class="trouble" value="hispaniclat">Hispanic/Latino</option>
+                        <option class="trouble" value="white">White</option>
+                        <option class="trouble" value="multi">Multiracial</option>
+                        <option class="trouble" value="other">Other Race</option>
+                    </select>
+                </div>
+            </div>
+            <div class = "favs fline">
+                <div class="exempt ls">
+                    <div class="color-label">Favorite Color</div>
+                    <input class="hh" type="radio" id="blue" name="fav_color" value="blue">
+                    <label class="hh" for="blue">Blue</label><br>
+                    <input class="hh" type="radio" id="red" name="fav_color" value="red">
+                    <label class="hh" for="red">Red</label><br>
+                    <input class="hh" type="radio" id="yellow" name="fav_color" value="yellow">
+                    <label class="hh" for="yellow">Yellow</label><br>
+                    <input class="hh" type="radio" id="other" name="fav_color" value="other">
+                    <label class="hh" for="other">Other Color</label><br>
+                </div>
+                <div class="exempt">
+                    <div class="animal-label">Favorite Animals</div>
+                    <input class="hh" type="checkbox" id="lion" name="fav_animals" value="lion">
+                    <label class="hh" for="lion">Lion</label><br>
+                    <input class="hh" type="checkbox" id="bear" name="fav_animals" value="bear">
+                    <label class="hh" for="bear">Bear</label><br>
+                    <input class="hh" type="checkbox" id="eagle" name="fav_animals" value="eagle">
+                    <label class="hh" for="eagle">Eagle</label><br>
+                    <input class="hh" type="checkbox" id="rabbit" name="fav_animals" value="rabbit">
+                    <label class="hh" for="rabbit">Rabbit</label><br>
+                </div>
+            </div>
+            <div class = "file fline">
+                <div class="lside">
+                    <label for="file">Upload a File</label>
+                    <input id="file" type="file" name="file" class="trouble filebutt" />
+                </div>
+            </div>
+            <div class = "submit fline">
+                <input type="submit" class="trouble subbutt" />
+            </div>
+        </form>
+    </div>
+</body>
+
+<style>
+    @font-face {
+        font-family: OpenSans;
+        src: url(OpenSans-VariableFont_wdth,wght.ttf);
+    }
+    body{
+        display: flex;
+        background-color: aliceblue;
+        font-family: OpenSans;
+        margin: 0;
+    }
+    .intitle{
+        margin: 15px;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .left{
+        width: 640px;
+        min-width: 270px;
+        height: 100vh;
+        position: relative;
+        margin: 0;
+    }
+    .author{
+        position: absolute;
+        text-align: center;
+        top: 30vh;
+        width: 100%;
+        background-color: black;
+        text-decoration: none;
+        opacity: 75%;
+        color: white;
+        font-size: 42px;
+        padding: 33px 0;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .whole-form{
+        max-width: 750px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 15px;
+        margin: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+    .fline{
+        display: flex;
+        flex-direction: row;
+        margin: 8px;
+    }
+    .lside{
+        display: flex;
+        flex-direction: column;
+        width: 225px;
+        padding-right: 15px;
+    }
+    .ls{
+        padding-right: 15px;
+    }
+    .rside{
+        display: flex;
+        flex-direction: column;
+        width: 225px;
+    }
+    .exempt{
+        width: 225px;
+    }
+    label{
+        padding: 0 0 4px 0;
+    }
+    textarea{
+        width: 460px;
+        height: 80px;
+    }
+    .big{
+        font-size: 24px;
+    }
+    .bigger{
+        font-size: 30px;
+    }
+    .trouble{
+        font-family: OpenSans;
+    }
+    .subbutt{
+        font-size: 20px;
+        background-color: aliceblue;
+        border-radius: 6px;
+        border-color: black;
+        border-style: solid;
+        padding: 3px 30px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        cursor: pointer;
+    }
+    .shaded{
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        border-radius: 5px;
+        border-style: solid;
+    }
+    .filebutt{
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .hh{cursor: pointer;}
+</style>
+<script>
+
+</script>
+
+</html>
